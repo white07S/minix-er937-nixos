@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Tokens. Neutrals lean slightly cool; the only hue is the chart series blue.
+   The green is the status colour for "passed" and is always paired with a label. */
+:root {
+  --bg: #f6f8fa;
+  --surface: #ffffff;
+  --surface-2: #edf1f5;
+  --line: #d3d9e0;
+  --fg: #141a21;
+  --fg-2: #505c6a;
+  --fg-3: #687482;
+  --series-1: #2a78d6;
+  --good: #0ca30c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #0e1217;
+    --surface: #161b22;
+    --surface-2: #1e252e;
+    --line: #2d3642;
+    --fg: #e7ebf0;
+    --fg-2: #a5b0bd;
+    --fg-3: #8691a0;
+    --series-1: #3987e5;
+    --good: #0ca30c;
+  }
+}
+
+@theme inline {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-fg-2: var(--fg-2);
+  --color-fg-3: var(--fg-3);
+  --color-series: var(--series-1);
+  --color-good: var(--good);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

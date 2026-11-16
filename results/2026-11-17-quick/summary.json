@@ -1,0 +1,204 @@
+{
+  "started": "2026-11-17 00:30",
+  "passed": true,
+  "problems": [],
+  "machine": {
+    "product": "Minix ER937-AI",
+    "bios": "FP8NS110",
+    "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+    "threads": 24,
+    "memory_gb": 30.5,
+    "kernel": "6.18.63",
+    "cpufreq_driver": "amd-pstate-epp"
+  },
+  "settings": {
+    "out": "/var/tmp/lt-quick",
+    "quick": true,
+    "threads": 24,
+    "cpu_minutes": 2,
+    "memory_minutes": 1,
+    "memory_workers": 8,
+    "memory_percent": 80,
+    "benchmark_seconds": 30,
+    "idle_seconds": 20,
+    "cooldown_seconds": 20,
+    "interval": 5,
+    "disk_file": "/var/tmp/loadtest.fio",
+    "disk_size_gb": 2,
+    "disk_seconds": 15,
+    "device": null,
+    "skip_disk": false
+  },
+  "device": "/dev/nvme0n1",
+  "benchmark": {
+    "passed": 24,
+    "failed": 0,
+    "ops_per_s": 14006.8
+  },
+  "cpu": {
+    "passed": 24,
+    "failed": 0,
+    "ops_per_s": 32293.53
+  },
+  "memory": {
+    "passed": 8,
+    "failed": 0,
+    "ops_per_s": 1120676.38
+  },
+  "disk": {
+    "verify": {
+      "exit": 0,
+      "error": 0,
+      "read": {
+        "mb_per_s": 7158,
+        "iops": 6827
+      },
+      "write": {
+        "mb_per_s": 5867,
+        "iops": 5596
+      }
+    },
+    "seqwrite": {
+      "exit": 0,
+      "error": 0,
+      "write": {
+        "mb_per_s": 6354,
+        "iops": 6059
+      }
+    },
+    "seqread": {
+      "exit": 0,
+      "error": 0,
+      "read": {
+        "mb_per_s": 7182,
+        "iops": 6849
+      }
+    },
+    "randread": {
+      "exit": 0,
+      "error": 0,
+      "read": {
+        "mb_per_s": 2517,
+        "iops": 614547
+      }
+    },
+    "randwrite": {
+      "exit": 0,
+      "error": 0,
+      "write": {
+        "mb_per_s": 2247,
+        "iops": 548616
+      }
+    }
+  },
+  "phases": {
+    "idle": {
+      "samples": 4,
+      "cpu_c_avg": 47.8,
+      "cpu_c_max": 52.1,
+      "nvme_c_max": 39.9,
+      "avg_mhz": 1020.2,
+      "min_avg_mhz": 664,
+      "pkg_w_avg": 2.4,
+      "pkg_w_max": 2.6
+    },
+    "bench": {
+      "samples": 6,
+      "cpu_c_avg": 71.7,
+      "cpu_c_max": 78.5,
+      "nvme_c_max": 40.9,
+      "avg_mhz": 3493.7,
+      "min_avg_mhz": 2448,
+      "pkg_w_avg": 56.3,
+      "pkg_w_max": 70.0
+    },
+    "cpu": {
+      "samples": 24,
+      "cpu_c_avg": 83.2,
+      "cpu_c_max": 84.0,
+      "nvme_c_max": 36.9,
+      "avg_mhz": 3662.7,
+      "min_avg_mhz": 3511,
+      "pkg_w_avg": 65.0,
+      "pkg_w_max": 65.2
+    },
+    "cooldown": {
+      "samples": 4,
+      "cpu_c_avg": 61.4,
+      "cpu_c_max": 80.9,
+      "nvme_c_max": 36.9,
+      "avg_mhz": 708.2,
+      "min_avg_mhz": 663,
+      "pkg_w_avg": 17.4,
+      "pkg_w_max": 61.5
+    },
+    "mem": {
+      "samples": 13,
+      "cpu_c_avg": 71.4,
+      "cpu_c_max": 88.2,
+      "nvme_c_max": 37.9,
+      "avg_mhz": 1783.9,
+      "min_avg_mhz": 1507,
+      "pkg_w_avg": 38.1,
+      "pkg_w_max": 62.5
+    },
+    "disk": {
+      "samples": 6,
+      "cpu_c_avg": 71.0,
+      "cpu_c_max": 74.5,
+      "nvme_c_max": 44.9,
+      "avg_mhz": 1509.3,
+      "min_avg_mhz": 979,
+      "pkg_w_avg": 20.3,
+      "pkg_w_max": 22.4
+    }
+  },
+  "smart_before": {
+    "nsid": -1,
+    "critical_warning": 0,
+    "temperature": 40,
+    "available_spare": 100,
+    "available_spare_threshold": 5,
+    "percentage_used": 0,
+    "data_units_read": 666830,
+    "data_units_written": 629085,
+    "host_reads": 47596722,
+    "host_writes": 37453281,
+    "controller_busy_time": 30,
+    "power_cycles": 8,
+    "power_on_hours": 2,
+    "unsafe_shutdowns": 2,
+    "media_errors": 0,
+    "num_err_log_entries": 0,
+    "warning_temp_time": 0,
+    "critical_comp_time": 0,
+    "temperature_sensors": [
+      40,
+      44
+    ]
+  },
+  "smart_after": {
+    "nsid": -1,
+    "critical_warning": 0,
+    "temperature": 46,
+    "available_spare": 100,
+    "available_spare_threshold": 5,
+    "percentage_used": 0,
+    "data_units_read": 746873,
+    "data_units_written": 701362,
+    "host_reads": 56840125,
+    "host_writes": 45709423,
+    "controller_busy_time": 31,
+    "power_cycles": 8,
+    "power_on_hours": 2,
+    "unsafe_shutdowns": 2,
+    "media_errors": 0,
+    "num_err_log_entries": 0,
+    "warning_temp_time": 0,
+    "critical_comp_time": 0,
+    "temperature_sensors": [
+      46,
+      65
+    ]
+  }
+}
